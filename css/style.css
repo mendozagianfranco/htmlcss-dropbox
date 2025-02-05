@@ -23,6 +23,15 @@ img {
     max-width: 100%;
 }
 
+section {
+    padding: 100px 0;
+}
+
+a.links {
+    text-decoration: underline;
+    color: #4f54f6;
+}
+
 .btn {
     background-color: #0061fe;
     padding: 10px;
@@ -67,10 +76,11 @@ header nav .login .btn {
 
 /**** MAIN ****/
 
+/* JUMBOTRON */
+
 main .jumbotron {
     background-color: #b4d0e6;
-    max-height: 730px;
-    padding-top: 100px;
+    max-height: 880px;
 }
 
 main .jumbotron h1 {
@@ -87,6 +97,7 @@ main .description .text-jumbotron {
     width: 400px;
     flex-shrink: 0;
 }
+
 main .description .img-jumbotron {
     flex-grow: 1;
 }
@@ -98,4 +109,72 @@ main .description .text-jumbotron > *:not(i) {
 main .description .text-jumbotron i {
     margin-top: 70px;
     font-size: 40px;
+}
+
+/* SEZIONE PIANO ACQUISTO  */
+
+main .piano-acquisti {
+    margin-top: 130px;
+    border-top: 2px solid #f8f8f8;
+}
+
+main .piano-acquisti .container > * {
+    padding-bottom: 40px;
+}
+
+main .piano-acquisti h2 {
+    font-size: 50px;
+}
+
+main .piano-acquisti .card {
+    width: calc((100% / 3) - 50px);
+}
+
+main .piano-acquisti .card.big {
+    width: 100%;
+}
+
+main .piano-acquisti .card-top {
+    padding: 10px 0;
+    justify-content: center;
+    gap: 5px;
+}
+
+main .piano-acquisti .card-bottom {
+    padding: 20px;
+}
+
+main .piano-acquisti .card > * {
+    border: 2px solid #d0d0d4;
+    margin: -1px;
+}
+
+main .piano-acquisti .options {
+    gap: 40px;
+}
+
+main .piano-acquisti .options .option {
+    align-items: center;
+}
+
+main .piano-acquisti .options .option .radio-btn {
+    display: inline-block;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+main .piano-acquisti .options .option .radio-btn.active {
+    border: 5px solid #0061fe;
+}
+
+main .piano-acquisti .options .option .radio-btn.disactive {
+    border: 2px solid #d0cfd4;
+}
+
+main .piano-acquisti .container-card {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
 }
