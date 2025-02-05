@@ -19,6 +19,10 @@ a {
     color: inherit;
 }
 
+img {
+    max-width: 100%;
+}
+
 .btn {
     background-color: #0061fe;
     padding: 10px;
@@ -65,19 +69,33 @@ header nav .login .btn {
 
 main .jumbotron {
     background-color: #b4d0e6;
-    max-height: 700px;
+    max-height: 730px;
     padding-top: 100px;
 }
 
 main .jumbotron h1 {
-    font-size: 50px;
+    font-size: 80px;
 }
 
-main .description div {
+main .jumbotron .description {
+    padding-top: 70px;
+}
+
+main .description .text-jumbotron {
+    flex-direction: column;
+    align-items: flex-start;
     width: 400px;
     flex-shrink: 0;
 }
+main .description .img-jumbotron {
+    flex-grow: 1;
+}
 
-main .description div > * {
-    margin: 25px 0;
+main .description .text-jumbotron > *:not(i) {
+    margin-bottom: 30px;
+}
+
+main .description .text-jumbotron i {
+    margin-top: 70px;
+    font-size: 40px;
 }
