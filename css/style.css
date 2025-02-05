@@ -30,6 +30,11 @@ a {
     display: flex;
 }
 
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
 /**** HEADER ****/
 
 header nav {
@@ -54,4 +59,25 @@ header nav .flex {
 
 header nav .login .btn {
     margin-left: 10px;
+}
+
+/**** MAIN ****/
+
+main .jumbotron {
+    background-color: #b4d0e6;
+    max-height: 700px;
+    padding-top: 100px;
+}
+
+main .jumbotron h1 {
+    font-size: 50px;
+}
+
+main .description div {
+    width: 400px;
+    flex-shrink: 0;
+}
+
+main .description div > * {
+    margin: 25px 0;
 }
