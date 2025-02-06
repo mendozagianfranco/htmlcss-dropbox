@@ -21,15 +21,16 @@ a {
 
 img {
     max-width: 100%;
-}
-
-section {
-    padding: 100px 0;
+    display: block;
 }
 
 a.links {
     text-decoration: underline;
     color: #4f54f6;
+}
+
+strong {
+    display: inline-block;
 }
 
 .btn {
@@ -49,8 +50,12 @@ a.links {
 }
 
 .container {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
+}
+
+.container.small {
+    width: 60%;
 }
 
 /**** HEADER ****/
@@ -77,34 +82,32 @@ header nav ul {
 
 main .jumbotron {
     background-color: #b4d0e6;
-    max-height: 880px;
+}
+
+main .jumbotron .container {
+    position: relative;
+    top: 100px;
 }
 
 main .jumbotron h1 {
     font-size: 80px;
-}
-
-main .jumbotron .description {
-    padding-top: 70px;
+    margin-bottom: 70px;
 }
 
 main .description .text-jumbotron {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 400px;
-    flex-shrink: 0;
+    width: 30%;
 }
 
 main .description .img-jumbotron {
-    flex-grow: 1;
+    width: 70%;
 }
 
 main .description .text-jumbotron > *:not(i) {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 main .description .text-jumbotron i {
-    margin-top: 70px;
+    margin-top: 180px;
     font-size: 40px;
 }
 
@@ -115,35 +118,12 @@ main .piano-acquisti {
     border-top: 2px solid #f8f8f8;
 }
 
-main .piano-acquisti .container > * {
-    padding-bottom: 40px;
-}
-
 main .piano-acquisti h2 {
     font-size: 50px;
 }
 
-main .piano-acquisti .card {
-    width: calc((100% / 3) - 50px);
-}
-
-main .piano-acquisti .card.big {
-    width: 100%;
-}
-
-main .piano-acquisti .card-top {
-    padding: 10px 0;
-    justify-content: center;
-    gap: 5px;
-}
-
-main .piano-acquisti .card-bottom {
-    padding: 20px;
-}
-
-main .piano-acquisti .card > * {
-    border: 2px solid #d0d0d4;
-    margin: -1px;
+main .piano-acquisti .container > * {
+    padding-top: 50px;
 }
 
 main .piano-acquisti .options {
@@ -174,6 +154,81 @@ main .piano-acquisti .container-card {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 50px;
+}
+
+main .piano-acquisti .card {
+    width: calc((100% / 3) - 50px);
+    border: 2px solid #d0d0d4;
+}
+
+main .piano-acquisti .card.big {
+    width: 100%;
+}
+
+main .piano-acquisti .card-top {
+    padding: 10px 0;
+    justify-content: center;
+    gap: 5px;
+    border-bottom: 2px solid #d0d0d4;
+}
+main .piano-acquisti .card-bottom h3 {
+    font-size: 30px;
+}
+
+main .piano-acquisti .card-bottom {
+    padding: 30px;
+}
+
+main .piano-acquisti .card-bottom > * {
+    padding: 20px 0;
+}
+
+main .piano-acquisti .card-bottom div > *,
+main .piano-acquisti .card-bottom ul > * {
+    margin: 10px 0;
+}
+
+main .piano-acquisti .card-bottom ul li {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+main .piano-acquisti .card-bottom .title-card .duration {
+    color: #666b71;
+}
+
+main .piano-acquisti .card-bottom .registration span {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d0cfd4;
+}
+main .piano-acquisti .card-bottom .registration a {
+    width: 100%;
+}
+
+main .piano-acquisti .card-bottom .list-main-points li i {
+    color: #0061fe;
+}
+
+main .piano-acquisti .card-bottom .list-main-points .title-list {
+    margin-bottom: 20px;
+}
+
+main .piano-acquisti .card.big .card-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .piano-acquisti .card.big .card-bottom .title-card {
+    width: 70%;
+}
+
+main .piano-acquisti .card.big .card-bottom .title-card p {
+    margin-top: 50px;
+}
+
+main .piano-acquisti .card.big .card-bottom .registration {
+    width: 30%;
 }
 
 /* SEZIONE PARTNER */
