@@ -8,6 +8,11 @@
 
 /**** COMMON ****/
 
+body {
+    font-family: 'Open Sans', serif;
+    font-optical-sizing: auto;
+}
+
 ul {
     list-style-type: none;
 }
