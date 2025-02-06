@@ -95,6 +95,7 @@ header nav ul li:not(.logo, .btn-nav)::after {
     width: 100%;
     border-bottom: 2px solid #808080;
     opacity: 0;
+    transition: opacity 0.3s;
 }
 
 header nav ul li:not(.logo, .btn-nav):hover::after {
