@@ -61,6 +61,10 @@ strong {
 header {
     padding: 0 20px;
     box-shadow: 0 1px 3px 0px #808080;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 3;
 }
 
 header nav {
