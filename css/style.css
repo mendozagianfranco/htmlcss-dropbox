@@ -71,7 +71,7 @@ header nav {
     justify-content: space-between;
 }
 
-header nav ul .logo,
+header nav .logo,
 header nav ul .btn-nav {
     padding: 0;
 }
@@ -82,12 +82,13 @@ header nav ul {
     gap: 40px;
 }
 
-header nav ul li {
+header nav ul li a {
     padding: 25px 15px;
     position: relative;
+    display: inline-block;
 }
 
-header nav ul li:not(.logo, .btn-nav)::after {
+header nav ul li a:not(.logo, .btn)::after {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -98,7 +99,7 @@ header nav ul li:not(.logo, .btn-nav)::after {
     transition: opacity 0.3s;
 }
 
-header nav ul li:not(.logo, .btn-nav):hover::after {
+header nav ul li a:hover::after {
     opacity: 1;
 }
 
