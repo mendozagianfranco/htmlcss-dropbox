@@ -262,3 +262,23 @@ main .partner .content-2 .btn {
     color: #000;
     border: 1px solid #000;
 }
+
+/* SEZIONE DROPBOX BUSINESS */
+
+main .dropbox-business .container {
+    margin-top: 160px;
+}
+
+main .dropbox-business h2 {
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+
+main .dropbox-business .container-grid .grid-item {
+    width: calc(100% / 3);
+}
+
+main .dropbox-business .container-grid .grid-item h3 {
+    margin-bottom: 40px;
+    font-size: 25px;
+}
