@@ -59,19 +59,42 @@ strong {
 /**** HEADER ****/
 
 header {
-    padding: 20px;
+    padding: 0 20px;
     box-shadow: 0 1px 3px 0px #808080;
 }
 
 header nav {
     justify-content: space-between;
-    align-items: center;
+}
+
+header nav ul .logo,
+header nav ul .btn-nav {
+    padding: 0;
 }
 
 header nav ul {
     display: flex;
     align-items: center;
     gap: 40px;
+}
+
+header nav ul li {
+    padding: 20px 5px;
+    position: relative;
+}
+
+header nav ul li:not(.logo, .btn-nav)::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    border-bottom: 2px solid #808080;
+    opacity: 0;
+}
+
+header nav ul li:not(.logo, .btn-nav):hover::after {
+    opacity: 1;
 }
 
 /**** MAIN ****/
