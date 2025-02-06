@@ -274,11 +274,17 @@ main .dropbox-business h2 {
     margin-bottom: 100px;
 }
 
+main .dropbox-business .container-grid {
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+}
+
 main .dropbox-business .container-grid .grid-item {
-    width: calc(100% / 3);
+    width: calc((100% / 3) - 50px);
 }
 
 main .dropbox-business .container-grid .grid-item h3 {
-    margin-bottom: 40px;
+    margin: 40px 0;
     font-size: 25px;
 }
