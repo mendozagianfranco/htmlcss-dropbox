@@ -6,8 +6,6 @@
     box-sizing: border-box;
 }
 
-/**** DEBUG ****/
-
 /**** COMMON ****/
 
 ul {
@@ -299,4 +297,36 @@ main .scopri-clienti .container {
 main .scopri-clienti h2 {
     font-size: 50px;
     margin-bottom: 60px;
+}
+
+/* SEZIONE FOOTER */
+
+footer {
+    background-color: #000;
+    color: #fff;
+}
+
+footer hr {
+    width: 10%;
+}
+
+footer .links-footer {
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+footer .links-footer h3 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+footer .links-footer ul li {
+    padding: 10px 0;
+}
+
+footer .language {
+    align-items: center;
+    gap: 5px;
+    color: #99999b;
+    padding: 50px 0;
 }
